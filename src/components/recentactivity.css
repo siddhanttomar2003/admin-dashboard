@@ -1,0 +1,113 @@
+/* Card styles */
+.card-ex {
+    /* margin: 20px; */
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+  }
+  .card-title {
+    font-size: 1rem; /* Decreased from 1.25rem */
+    font-weight: 700;
+    color: #4e73df;
+  }
+  /* Activity container */
+  .activity {
+    margin-top: 16px;
+  }
+  /* Activity item styles */
+  .activity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 8px; /* Decreased from 16px */
+    position: relative;
+    padding-left: 20px;
+    font-size: .75rem;
+  }
+  
+  .activity-item::before {
+    content: "";
+    position: absolute;
+    left: 83px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #e0e0e0;
+    z-index: -1;
+  }
+  
+  .activity-label {
+    font-size: 0.75rem; /* Decreased from 0.875rem */
+    color: #888;
+    margin-right: 8px;
+    white-space: nowrap;
+    min-width: 50px; /* Decreased from 60px */
+  }
+  
+  .activity-badge {
+    width: 8px; /* Decreased from 10px */
+    height: 8px; /* Decreased from 10px */
+    border-radius: 50%;
+    margin-right: 10px; /* Decreased from 12px */
+    margin-top: 2px;
+    z-index: 1;
+  }
+  
+  /* Custom color classes for badges */
+  .activity-badge.green {
+    background-color: #28a745; /* Green color */
+  }
+  
+  .activity-badge.red {
+    background-color: #dc3545; /* Red color */
+  }
+  
+  .activity-badge.blue {
+    background-color: #007bff; /* Blue color */
+  }
+  
+  .activity-badge.orange {
+    background-color: #fd7e14; /* Orange color */
+  }
+  
+  .activity-badge.gray {
+    background-color: #6c757d; /* Gray color */
+  }
+  
+  .activity-content {
+    font-size: 0.75rem; /* Decreased from 0.875rem */
+    color: #333;
+    line-height: 1.2; /* Decreased from 1.5 */
+  }
+  
+  /* Highlighted text link */
+  .highlight-text {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .highlight-text:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flex alignment */
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-self-start {
+    align-self: flex-start;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 1100px) {
+    .card-ex {
+      min-width:300px !important;
+    }
+  
+    .activity-item {
+      min-width: 250px;
+    }
+  }
+  

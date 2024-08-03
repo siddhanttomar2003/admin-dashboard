@@ -1,0 +1,38 @@
+.pagetitle {
+    margin-bottom: 10px; /* Adjusted for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #012970;
+  }
+  
+  .breadcumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcumb-item {
+    margin-right: 10px;
+  }
+  
+  .breadcumb-item.active {
+    color: #012970;
+  }
+  
+  .breadcumb-item a {
+    color: #012970;
+    text-decoration: none;
+  }
+  
+  .breadcumb-item a i {
+    font-size: 16px;
+  }
